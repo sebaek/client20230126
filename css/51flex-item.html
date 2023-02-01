@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item {
+            background-color: skyblue;
+        }
+
+        .item:nth-child(odd) {
+            background-color: yellow;
+        }
+
+        .container {
+            display: flex;
+            background-color: chocolate;
+        }
+
+        #item5 {
+            /* flex container의 남은 공간을 */
+            /* 얼마나 차지할 것인지? */
+            /* 현재 너비에서 시작 */
+            flex-grow: 1;
+            width: 30px;
+
+            /* 남은 공간을 차지하기 전 시작할 너비 */
+            flex-basis: 0;
+        }
+
+        #item4 {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        #item3 {
+            /* flex-grow: 1;
+            flex-basis: 0; */
+            flex: 1; 
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.item#item$*5{$} -->
+    <div class="container">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+    </div>
+</body>
+</html>
