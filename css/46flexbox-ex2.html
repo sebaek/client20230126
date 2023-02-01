@@ -12,42 +12,63 @@
 
         .container {
             display: flex;
+            background-color: black;
         }
 
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- flexbox -->
+    <!-- 감싸고 있는 요소 : flex container -->
+    <!-- flex container의 '자식' 요소들 : flex item -->
+    <div class="container" style="justify-content: space-between;">
 
-        <!-- .item*9 -->
-        <div class="item">
-            <i class="fa-solid fa-house"></i>
+        <div class="container">
+            
+            <!-- .item*9 -->
+            <div class="item">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="item">
+                HTML
+            </div>
+            <div class="item">
+                CSS
+            </div>
+            <div class="item">
+                JAVASCRIPT
+            </div>
+            <div class="item">
+                SQL
+            </div>
+            <div class="item">
+                PYTHON
+            </div>
+            <div class="item">
+                JAVA
+            </div>
+            <div class="item">
+                PHP
+            </div>
+            <div class="item">
+                BOOTSTRAP
+            </div>
+
         </div>
-        <div class="item">
-            HTML
-        </div>
-        <div class="item">
-            CSS
-        </div>
-        <div class="item">
-            JAVASCRIPT
-        </div>
-        <div class="item">
-            SQL
-        </div>
-        <div class="item">
-            PYTHON
-        </div>
-        <div class="item">
-            JAVA
-        </div>
-        <div class="item">
-            PHP
-        </div>
-        <div class="item">
-            BOOTSTRAP
+
+        <div class="container">
+            <div class="item">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
 
     </div>
+
 </body>
 </html>
