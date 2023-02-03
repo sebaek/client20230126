@@ -20,6 +20,35 @@
     console.log(a);
     console.log(b);
     console.log(c);
+
+    // ", '을 바로 사용 가능
+    let d = `hello "my" 'world'`;
+    console.log(d);
+    let e = `\`은 template literal 용 기호`;
+    console.log(e);
+    let f = "`은 template literal 용 기호";
+    console.log(f);
+
+    // 새로운 줄을 escape character(\)없이 사용 가능
+    let g = "hello\nworld";
+    console.log(g);
+
+    let h = `hello
+world`;
+    console.log(h);
+
+    // 문자열 내에서 변수(variable)나 식(expression) 사용 가능
+    let i = "john";
+    let j = `hello ${i}`;
+
+    console.log(j);
+
+    let k = 99;
+    let l = 88;
+
+    let m = `${k}와 ${l}을 더한 값은 ${k + l}`;
+    console.log(m);
+
     </script>
 </body>
 </html>
