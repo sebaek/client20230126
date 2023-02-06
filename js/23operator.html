@@ -22,10 +22,20 @@
     <script>
     function divide() {
         // 코드 작성
+        let num1 = document.querySelector("#input1").value;
+        let num2 = document.querySelector("#input2").value;
+
+        let res = num1 / num2;
+        document.querySelector("#result").textContent = res;
     }
 
     function sum() {
         // 코드 작성
+        let num1 = document.querySelector("#input1").value;
+        let num2 = document.querySelector("#input2").value;
+
+        let res = parseFloat(num1) + parseFloat(num2);
+        document.querySelector("#result").textContent = res;
     }
 
     function subtract() {

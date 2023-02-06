@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    // 비교 연산자 
+    // 연산결과 : 두항을 비교한 결과 (boolean)
+    // ==, ===, !=, !==, <, <=, >, >=
+
+    // == : 값이 같은가?
+    // 결과 : 값이 같으면 (true), 값이 다르면 (false)
+    let a = 3;
+    let b = 5;
+
+    let c = a == b; // false
+    console.log(c); // false
+
+    let d = a == 3; // true
+    console.log(d); // true
+
+    let e = "java";
+    let f = "javascript";
+    console.log(e == f); // false
+
+    console.log(e == "java"); // true
+    console.log(e == 'java'); // true
+    console.log(e == `java`); // true
+
+    let g = 33;
+    let h = "33";
+    console.log(g == h); // true (값만 비교)
+
+    // === : 값과 타입이 같으면 true, 그렇지 않으면 false
+    console.log(g === h); // false (값과 타입 비교)
+
+    // != : 값이 같지 않으면 true, 그렇지 않으면 false
+    let i = 3;
+    let j = 5;
+    console.log(i != j); // true
+
+    console.log(i != "3"); // false
+
+    // !== : 값이 같지 않거나 타입이 같지 않으면 true
+    console.log(i !== j); // true
+    console.log(i !== "3"); // true
+
+    </script>
+</body>
+</html>
