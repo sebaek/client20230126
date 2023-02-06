@@ -12,21 +12,29 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 피연산가 하나인 산술연산자 (unary)
-    // +, -, ++, --
+    // ++, --
+    // 단항연산자(unary)
+
+    // ++ : 증가연산자(increment)
+    // ++ : 변수가 가진 값 + 1이 해당 변수에 다시 할당
     let a = 3;
-    let b = +a; // a의 부호를 바꾸지 않은 결과
-    console.log(b); // 3
+    a++; // a는 4가 됨
 
-    let c = -a; // a의 부호를 바꾼 값이 결과
-    console.log(c); // -3
+    console.log(a); // 4
 
-    let d = "3";
-    let e = 3 + d; // "33"
-    console.log(e); // "33"
+    // 피연산자의 위치에 따라 연산결과가 다름
+    let b = 3;
+    let c = b++;
+    console.log("b", b); // 4
+    console.log("c", c); // 3
 
-    let f = 3 + (+d); // 6
-    console.log(f); // 6
+    let d = 3;
+    let e = ++d;
+    console.log("d", d); // 4
+    console.log("e", e); // 4
+
+
+
     </script>
 </body>
 </html>
