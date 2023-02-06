@@ -9,9 +9,12 @@
     </style>
 </head>
 <body>
-    <button onclick="rps(0)">가위</button>
-    <button onclick="rps(1)">바위</button>
-    <button onclick="rps(2)">보</button>
+    <button onclick="rps(0)">✌</button>
+    <button onclick="rps(1)">✊</button>
+    <button onclick="rps(2)">✋</button>
+    <div>
+        컴퓨터 : <span id="com"></span>
+    </div>
 
     <h1 id="result"></h1>
 
@@ -26,6 +29,14 @@
 
         console.log("com", com);
         console.log("user", user);
+
+        if (com === 0) {
+            document.querySelector("#com").textContent = "✌";
+        } else if (com === 1) {
+            document.querySelector("#com").textContent = "✊";
+        } else {
+            document.querySelector("#com").textContent = "✋";
+        }
 
         let message = "";
         if (user === com) {
