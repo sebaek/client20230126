@@ -10,33 +10,28 @@
 </head>
 <body>
 
-    <input type="text">
-    <button onclick="guess()">입력</button>
-    <p id="result"></p>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 컴퓨터가 1~100사이의 수 선택
-    let com = parseInt(Math.random() * 100) + 1;
-    console.log(com);
+    // Math.random() 
+    // 0 <= Math.random() < 1 수를 임의로 리턴함
 
-    function guess() {
-        let user = document.querySelector("input").value;
-        user = Number(user);
+    // parseInt()
+    // 정수로 반환함
 
-        let message = "";
+    let a = Math.random();
+    console.log(a); // 0.0 <= a < 1.0
 
-        if (user < com) {
-            message = "더 큰 수를 입력해보세요.";
-        } else if (user > com) {
-            message = "더 작은 수를 입력해보세요.";
-        } else {
-            message = "🎉정답입니다.!!!!";
-        }
+    a *= 100;
 
-        document.querySelector("#result").textContent = message;
-    }
+    console.log(a); // 0.0 <= a < 100.0
 
+    a = parseInt(a);
+
+    console.log(a); // 0 <= a < 100  --->  0 <= a <= 99
+
+    a += 1;
+
+    console.log(a); // 1 <= a <= 100
 
     </script>
 </body>
