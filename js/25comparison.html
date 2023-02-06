@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    // 비교연산자의 피연산자가 string(문자열)
+
+    // 문자의 코드로 비교(사전순과 유사)
+
+    let a = "java";
+    let b = "js";
+
+    console.log(a === b); // false
+    console.log(a !== b); // true
+    console.log(a === "java"); // true
+    console.log(a === "JAVA"); // false
+
+    // 
+    let c = "c";
+    let d = "d";
+
+    console.log(c < d); // true
+    console.log(d < c); // false
+
+    console.log(c < "can"); // true
+    console.log(c < "C"); // false (unicode 비교)
+
+    console.log("걫" < "걻"); // true
+    
+
+    // 다른 타입과 비교 (두 항을 Number로 변환 후 비교)
+    // 가능한 피할 것!!!
+    console.log("3" < 4); // true
+    console.log("5" < 4); // false
+    console.log("11" < "2"); // true
+    console.log("11" < 2); // false
+
+    let e = "11";
+    let f = 2;
+
+    // 비교하기 전 타입 변환
+    let g = +e; // "11" ---> 11
+    console.log(g < f); // Number끼리 비교
+
+    let h = "" + f; // 2 ---> "2"
+    console.log(e < h); // String끼리 비교
+
+
+
+    </script>
+</body>
+</html>
