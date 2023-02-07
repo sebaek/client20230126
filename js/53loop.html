@@ -16,14 +16,24 @@
     let num2 = +prompt("두번째 수를 입력하세요", 10);
 
     // num1과 num2사이의 수들을 더한 값 출력
+    let min = 0;
+    let max = 0;
+
+    if (num1 < num2) {
+        min = num1;
+        max = num2;
+    } else {
+        min = num2;
+        max = num1;
+    }
 
     let sum = 0;
-    for (let i = num1; i <= num2; i++) {
+    for (let i = min; i <= max; i++) {
         // console.log(i);
         sum = sum + i;
     }
 
-    console.log(num1 + "과 " + num2 + "사이의 합은 " + sum + "입니다.");
+    console.log(min + "과 " + max + "사이의 합은 " + sum + "입니다.");
     
 
     </script>
