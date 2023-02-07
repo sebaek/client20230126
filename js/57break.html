@@ -18,15 +18,22 @@
     while (true) {
         let user = +prompt("1~100의 값 중 컴퓨터가 선택한 수를 맞춰보세요.", 50);
 
-        // user가 입력한 수가 com 보다 작으면
-        // alert("더 큰 수를 입력해주세요")
+        if (user < com) {
+            // user가 입력한 수가 com 보다 작으면
+            // alert("더 큰 수를 입력해주세요")
+            alert("더 큰 수를 입력해주세요");
+        } else if (user > com) {
+            // user가 입력한 수가 com 보다 크면
+            // alert("더 작은 수를 입력해주세요")
+            alert("더 작은 수를 입력해주세요");
+        } else {
+            // user가 입력한 수가 com과 같으면
+            // alert("정답입니다.")
+            // while문 종료
+            alert("정답입니다.");
+            break;
+        }
 
-        // user가 입력한 수가 com 보다 크면
-        // alert("더 작은 수를 입력해주세요")
-
-        // user가 입력한 수가 com과 같으면
-        // alert("정답입니다.")
-        // while문 종료
     }
     </script>
 </body>
