@@ -12,22 +12,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 두개의 주사위를 던지고
-    // 나온 값을 출력
-    // 두 주사위의 값이 같을 때 까지 반복
-
-    let dice1;
-    let dice2;
+    // 컴퓨터가 1~100의 수를 선택
+    let com = parseInt(Math.random() * 100) + 1;
 
     while (true) {
-        dice1 = parseInt(Math.random() * 6) + 1;
-        dice2 = parseInt(Math.random() * 6) + 1;
+        let user = +prompt("1~100의 값 중 컴퓨터가 선택한 수를 맞춰보세요.", 50);
 
-        console.log(dice1, dice2);
+        // user가 입력한 수가 com 보다 작으면
+        // alert("더 큰 수를 입력해주세요")
 
-        if (dice1 === dice2) {
-            break;
-        }
+        // user가 입력한 수가 com 보다 크면
+        // alert("더 작은 수를 입력해주세요")
+
+        // user가 입력한 수가 com과 같으면
+        // alert("정답입니다.")
+        // while문 종료
     }
     </script>
 </body>
