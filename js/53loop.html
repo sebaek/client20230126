@@ -12,11 +12,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let num1 = +prompt("첫번재 수를 입력하세요", 1);
-    let num2 = +prompt("두번재 수를 입력하세요", 10);
+    let num1 = +prompt("첫번째 수를 입력하세요", 1);
+    let num2 = +prompt("두번째 수를 입력하세요", 10);
 
     // num1과 num2사이의 수들을 더한 값 출력
+
+    let sum = 0;
+    for (let i = num1; i <= num2; i++) {
+        // console.log(i);
+        sum = sum + i;
+    }
+
+    console.log(num1 + "과 " + num2 + "사이의 합은 " + sum + "입니다.");
     
+
     </script>
 </body>
 </html>
