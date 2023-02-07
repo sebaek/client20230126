@@ -13,9 +13,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
     
-    for (let i = 1; i <= 9; i++) {
-        console.log(2 + " X " + i + " = " + (2 * i));
+    for (let j = 2; j <= 9; j++) {
+        console.log(j + "단");
+        for (let i = 1; i <= 9; i++) {
+            console.log(j + " X " + i + " = " + (j * i));
+        }
     }
+
+    console.log("거꾸로 출력");
+    for (let j = 9; j >= 2; j--) {
+        console.log(j + "단");
+        for (let i = 9; i >= 1; i--) {
+            console.log(j + " X " + i + " = " + (j * i));
+        }
+    }
+
+
     </script>
 </body>
 </html>
