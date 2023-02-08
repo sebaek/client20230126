@@ -13,8 +13,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
     // 함수 작성해 보기
-    
+    function printHello() {
+        console.log("HELLO!!");
+    }
+
+    function printWorld() {
+        console.log("WORLD.");
+    }
+
+    function printHelloWorld() {
+        printHello();
+        printWorld();
+    }
+
     printHello(); // 콘솔에 "HELLO!!"
+    printWorld();
+    printHelloWorld();
     </script>
 </body>
 </html>
