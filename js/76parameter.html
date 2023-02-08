@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    function a() {
+        console.log("파라미터 없는 함수");
+    }
+    a();
+    a(33);
+
+    function b(param1, param2) {
+        console.log("파라미터 2개 있는 함수");
+        console.log(param1, param2);
+    }
+
+    b();
+    b(99);
+    b(11, 22);// 인수는 매개변수 순서에 맞게 들어감
+
+    function printDouble(num) {
+        let d = num * 2;
+        console.log(d);
+    }
+    
+    printDouble(3); // 6
+    printDouble(4); // 8
+    printDouble(100); // 200
+
+
+    printSum(3, 4); // 7
+    printSum(100, 200); // 300
+    printSum("java", "css"); // "javacss"
+
+    </script>
+</body>
+</html>
