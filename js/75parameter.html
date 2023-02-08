@@ -12,30 +12,22 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 함수 작성해 보기
-    function printHello() {
-        console.log("HELLO!!");
+    function a() {
+        console.log("java");
     }
 
-    function printWorld() {
-        console.log("WORLD.");
+    a();
+
+    // 함수정의할 때 ()내에 parameter(매개변수) 목록 작성 가능
+    // 파라미터이름은 lowerCamelCase 관습 따름
+    // 파라미터는 함수호출할 때 값을 받음
+    function b(param) {
+        console.log("b함수 실행됨");
+        console.log(param);
     }
 
-    function printHelloWorld() {
-        function newFunction() {
-            console.log("new function");
-        }
-        printHello();
-        printWorld();
-        newFunction();
-    }
-
-    // newFunction();
-
-    // 함수실행(execute), 함수호출(call, invoke)
-    printHello(); // 콘솔에 "HELLO!!"
-    printWorld(); 
-    printHelloWorld();
+    b();
+    b(3);
     </script>
 </body>
 </html>
