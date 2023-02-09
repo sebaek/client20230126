@@ -11,7 +11,7 @@
 <body>
     <!-- input#input1+button[onclick]{추가}+ul#list1>li*2>lorem1 -->
     <input type="text" id="input1">
-    <button onclick="">추가</button>
+    <button onclick="addList();">추가</button>
     <ul id="list1">
         <li>
             Lorem.
@@ -24,7 +24,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
+    function addList() {
+        // 1.#input1 의 value 얻기
+        let text = document.querySelector("#input1").value;
+        // 2.새 li 요소 만들고
+        let li = document.createElement("li");
+        // 3.새 li 요소의 textContent를 1에서 얻은 값으로 할당
+        li.textContent = text;
+        // 4. #list1 요소 얻기
+        let ul = document.querySelector("#list1");
+        // 5. 4에서 얻은 요소에 2에서 만든 요소 append 하기
+        ul.append(li);
+
+    }
     </script>
 </body>
 </html>
