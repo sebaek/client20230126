@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,26 +9,48 @@
     <style>
     </style>
 </head>
+
 <body>
     <!-- input#input$*2+button[onclick]*4+#res -->
     <input type="text" id="input1">
     <input type="text" id="input2">
     <button onclick="sum();">+</button>
-    <button onclick="">-</button>
-    <button onclick="">/</button>
-    <button onclick="">*</button>
+    <button onclick="subtract();">-</button>
+    <button onclick="divide();">/</button>
+    <button onclick="multiply();">*</button>
     <div id="res"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    function sum() {
-        let num1 = +document.querySelector("#input1").value;
-        let num2 = +document.querySelector("#input2").value;
+        function multiply() {
+            let num1 = +document.getElementById("input1").value;
+            let num2 = +document.getElementById("input2").value;
 
-        let sum = num1 + num2;
+            document.getElementById("res").textContent = num1 * num2;
+        }
+        function divide() {
+            let num1 = Number(document.getElementById("input1").value);
+            let num2 = Number(document.getElementById("input2").value);
 
-        document.querySelector("#res").textContent = sum;
-    }
+            let r = num1 / num2;
+            document.getElementById("res").textContent = r;
+        }
+        function subtract() {
+            let num1 = Number(document.querySelector("#input1").value);
+            let num2 = Number(document.querySelector("#input2").value);
+
+            let r = num1 - num2;
+            document.querySelector("#res").textContent = r;
+        }
+        function sum() {
+            let num1 = +document.querySelector("#input1").value;
+            let num2 = +document.querySelector("#input2").value;
+
+            let sum = num1 + num2;
+
+            document.querySelector("#res").textContent = sum;
+        }
     </script>
 </body>
+
 </html>
