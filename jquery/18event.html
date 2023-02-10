@@ -10,17 +10,53 @@
 </head>
 <body>
     <!-- p*10 -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iure beatae soluta odio sit neque quas, perferendis eum assumenda ea accusantium vero consectetur odit ullam cupiditate deserunt quis. Inventore, fugiat.
+    </p>
+    <p>
+        Recusandae tenetur officiis eius dolore. Consequatur libero ad non omnis similique sint ipsum atque dolorem laudantium. Similique magnam incidunt, non, voluptas nobis voluptates illum, quod nostrum sit ratione necessitatibus reiciendis!
+    </p>
+    <p>
+        Perspiciatis, fuga quisquam obcaecati incidunt ad quas ab minima vel ducimus! Aperiam voluptatum, autem pariatur, qui eum nulla ipsum quaerat nesciunt exercitationem temporibus dolore blanditiis. Minima numquam vitae nostrum modi?
+    </p>
+    <p>
+        Recusandae est fuga, dignissimos corporis sequi, ratione deserunt porro dolore consequatur tenetur provident laudantium inventore, suscipit esse! Eius alias, deleniti ipsam quod fugiat, dolorum nesciunt magni maiores officia doloribus corporis.
+    </p>
+    <p>
+        Quia sunt cupiditate alias reprehenderit dolore eos aliquid aut molestiae dolores quae at, sequi, sit unde facere voluptatem fuga velit recusandae nulla iusto asperiores facilis provident! Impedit molestiae omnis voluptatibus.
+    </p>
+    <p>
+        Modi laboriosam reiciendis quae quisquam, molestias facere aliquam accusantium odio nesciunt a iusto quis tempore, amet sed quos eos eligendi. Impedit vitae veniam totam odit praesentium unde dignissimos dolorum iure.
+    </p>
+    <p>
+        Optio mollitia doloribus explicabo expedita alias nam, aliquid accusantium id magni nemo praesentium, quasi voluptatum maiores earum harum ullam quis neque soluta laudantium non ut exercitationem voluptas dicta excepturi? Fuga.
+    </p>
+    <p>
+        Ut, quidem quasi, ea ducimus iste quos nam iusto sapiente repellat, dolor optio neque illo in iure dicta beatae velit nesciunt eos dolorem illum corrupti! Harum debitis quas facere iure.
+    </p>
+    <p>
+        Repellat, illo. Qui consectetur voluptatem error, voluptates quod mollitia, aliquam unde perspiciatis similique distinctio omnis aperiam laboriosam quis iusto. Molestiae amet consectetur molestias culpa nostrum? Assumenda laborum at ducimus ipsa.
+    </p>
+    <p>
+        Inventore expedita exercitationem, adipisci delectus distinctio iure eum non esse assumenda dignissimos, nobis reiciendis consectetur quibusdam nisi magnam, quasi debitis explicabo vero ducimus consequuntur officia. Ut quo illo fugit molestias!
+    </p>
 
     <!-- button -->
+    <button>다 보이기</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         // p요소가 클릭되면
         // 클릭된 p요소가 fadeOut 되도록
-
+        $("p").on("click", function() {
+            $(this).fadeOut();
+        });
         // button이 클릭되면
         // 모든 p요소가 fadeIn 되도록
+        $("button").on("click", function() {
+            $("p").fadeIn();
+        })
     
     </script>
 </body>
