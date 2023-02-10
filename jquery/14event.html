@@ -9,29 +9,23 @@
     </style>
 </head>
 <body>
-    <!-- h1>lorem1 -->
+    <!-- button*2#button$+h1>lorem -->
+    <button id="button1">숨기기</button>
+    <button id="button2">보이기</button>
     <h1>
-        Lorem.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis vero deserunt quo fugit, atque in rerum ex? Odio harum, dolorum deserunt sunt et nisi voluptatem illo impedit eligendi fugiat nobis.
     </h1>
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore modi pariatur minus ipsum doloremque eveniet, labore voluptates praesentium culpa, maxime obcaecati, laudantium accusamus facilis. Officia quod aperiam eligendi vero laudantium.
-    </p>
-    <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti earum voluptatibus fugiat facere, distinctio ipsum. Nisi velit illo, facilis exercitationem maiores dolorem autem enim delectus molestiae sed doloribus deserunt!
-    </h2>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    $("h2").on("click", function() {
-        console.log("h2 요소 클릭됨");
-    })
-    $("h1").on("click", function() {
-        console.log("h1 클릭됨");
-    });
-    $("p").on("click",function() {
-        console.log("p 클릭됨");
-    })
+        $("#button1").on("click", function() {
+            $("h1").slideUp();
+        });
+
+        $("#button2").on("click", function() {
+            $("h1").slideDown();
+        })
     </script>
 </body>
 </html>

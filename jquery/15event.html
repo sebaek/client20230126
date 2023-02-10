@@ -9,29 +9,15 @@
     </style>
 </head>
 <body>
-    <!-- h1>lorem1 -->
-    <h1>
-        Lorem.
-    </h1>
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore modi pariatur minus ipsum doloremque eveniet, labore voluptates praesentium culpa, maxime obcaecati, laudantium accusamus facilis. Officia quod aperiam eligendi vero laudantium.
-    </p>
-    <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti earum voluptatibus fugiat facere, distinctio ipsum. Nisi velit illo, facilis exercitationem maiores dolorem autem enim delectus molestiae sed doloribus deserunt!
-    </h2>
+    <input type="text" id="input1">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    $("h2").on("click", function() {
-        console.log("h2 요소 클릭됨");
-    })
-    $("h1").on("click", function() {
-        console.log("h1 클릭됨");
-    });
-    $("p").on("click",function() {
-        console.log("p 클릭됨");
-    })
+        $("#input1").on("keyup", function(e) {
+            // console.log("키업 발생!");
+            console.log(e.key);
+        });
     </script>
 </body>
 </html>
