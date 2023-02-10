@@ -9,40 +9,27 @@
     </style>
 </head>
 <body>
-    <!-- button*2#button${클릭$} -->
-    <button id="button1">클릭1</button>
-    <button id="button2">클릭2</button>
-    <button id="button3">오른쪽 클릭3</button>
-    <button id="button4">더블 클릭4</button>
-    <button id="button5">포인터 들어옴5</button>
-    <button id="button6">포인터 나감6</button>
+    <!-- button#button$*2{호버$} -->
+    <button id="button1">호버1</button>
+    <button id="button2">호버2</button>
 
     <div id="res"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $("#button6").mouseleave(function() {
-            $("#res").text("6버튼 마우스 나감")
-        });
-        $("#button5").mouseenter(function() {
-            $("#res").text("5번 버튼 마우스 들어옴");
-        });
-        $("#button4").dblclick(function() {
-            $("#res").text("4번 버튼 더블 클릭됨");
-        });
-        $("#button3").contextmenu(function() {
-            $("#res").text("3번 버튼 오른쪽 클릭됨");
-        });
+    $("#button1").mouseenter(function() {
+        $("#res").text("1번버튼에 포인터 들어감");
+    });
+    $("#button1").mouseleave(function() {
+        $("#res").text("1번버튼 포인터 떠남");
+    });
 
-        $("#button1").on("click", function() {
-            $("#res").text("1번 버튼 클릭됨");
-        });
-
-        $("#button2").click(function() {
-            $("#res").text("2번 버튼 클릭됨")
-        });
-
-
+    $("#button2").hover(function() {
+        $("#res").text("2번버튼 포인터 들어감");
+    }, function() {
+        $("#res").text("2번버튼 포인터 떠남");
+    });
     </script>
 </body>
 </html>
