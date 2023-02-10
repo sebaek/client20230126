@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,39 +8,29 @@
     <style>
     </style>
 </head>
-
 <body>
-    <!-- input#input1+ul#list1 -->
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
-
-    <hr>
-    <!-- input#input2+ul#list2 -->
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
+    <!-- h1#head$*3>lorem1 -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Doloribus.
+    </h1>
+    <h1 id="head3">
+        Tempora!
+    </h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // jquery
-        $("#input2").keyup(function(e) {
-            if (e.key === "Enter") {
-                $("#list2").append(`<li>${$(this).val()}</li>`);
-                $(this).val("");
-            }
-        });
+    let a = $();
+    console.log(a);
 
+    let b = $("#head1");
+    console.log(b);
 
-        // 보통의 자바스크립트 코드(vanilla javascript)
-        document.querySelector("#input1").addEventListener("keyup", function (e) {
-            if (e.key === "Enter") {
-                let li = document.createElement("li");
-                li.textContent = this.value;
-                document.querySelector("#list1").append(li);
-                this.value = "";
-            }
-        });
+    b.remove();
+    
     </script>
 </body>
-
 </html>
