@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    <!-- h1#head$*3>lorem1^p#para$*3>lorem -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Aperiam!
+    </h1>
+    <h1 id="head3">
+        Cumque!
+    </h1>
+    <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo doloribus minima, sapiente debitis, nostrum, delectus porro minus natus esse accusamus ipsum at deserunt qui doloremque voluptas quod quas harum.
+    </p>
+    <p id="para2">
+        Esse illo officiis libero quaerat eaque quasi perspiciatis ut id veniam dolores quod, deleniti dolore temporibus quisquam minus maxime repellendus quo? Aliquam facere assumenda corrupti distinctio molestiae hic maiores soluta!
+    </p>
+    <p id="para3">
+        Ea quo quos, eligendi velit quas placeat illum perferendis accusamus? Expedita sint quos suscipit! Quis repudiandae voluptatibus ducimus autem doloremque magnam quasi voluptatem. Atque eum accusamus blanditiis! Obcaecati, possimus perferendis!
+    </p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $("#head1").hide(3000);
+    $("p").hide(5000);
+
+    // vanilla js
+    let paras = document.querySelectorAll("p");
+    for (let i = 0; i < paras.length; i++) {
+        paras[i].style = {display: "none"};
+    }
+
+    </script>
+</body>
+</html>

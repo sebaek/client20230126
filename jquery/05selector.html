@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    <!-- h1#head1>lorem1
+    h1.note*2>lorem1
+    h1.error*2>lorem1
+    p*3>lorem -->
+
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 class="note">
+        Lorem.
+    </h1>
+    <h1 class="note">
+        Facere?
+    </h1>
+    <h1 class="error">
+        Lorem.
+    </h1>
+    <h1 class="error">
+        Ullam.
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate ipsam neque sequi nostrum sunt voluptatem minus labore eius ad doloremque optio soluta maiores pariatur illo sapiente rerum fuga explicabo.
+    </p>
+    <p>
+        Facilis libero ea nobis placeat modi mollitia aperiam repellat fuga repudiandae, ipsam consequuntur ipsum delectus! Qui dicta officiis in! Labore omnis molestiae obcaecati optio consequuntur eaque odio earum accusantium deserunt.
+    </p>
+    <p>
+        Eum, itaque! Porro a culpa facilis, autem corporis perferendis possimus. Reprehenderit, exercitationem commodi autem nemo assumenda optio est pariatur dignissimos officiis eos. Labore dolor maiores quas eligendi exercitationem voluptatum voluptatem?
+    </p>
+
+    <!-- button[onclick]*4{click$} -->
+    <button onclick="effect1();">click1</button>
+    <button onclick="effect2();">click2</button>
+    <button onclick="effect3();">click3</button>
+    <button onclick="effect4();">click4</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function effect1() {
+            $("#head1").hide(3000);
+        }
+
+        function effect2() {
+            $(".note").hide(3000);
+        }
+
+        function effect3() {
+            // error 클래스인 요소들 숨기기
+        }
+
+        function effect4() {
+            // p요소들 숨기기
+        }
+    
+    </script>
+</body>
+</html>
