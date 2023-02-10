@@ -23,7 +23,13 @@
         // p 요소가 보이게
         // h1요소에서 마우스 포인터 떠나면
         // p 요소가 숨겨지게
-        
+
+        $("h1").hover(function() {
+            $("p").slideDown("fast");
+        }, function() {
+            $("p").slideUp("fast");
+        });
+
     </script>
 </body>
 </html>
