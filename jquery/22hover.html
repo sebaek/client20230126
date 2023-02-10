@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,30 +8,22 @@
     <style>
     </style>
 </head>
-
 <body>
-    <!-- button#button$*2{호버$} -->
-    <button id="button1">호버1</button>
-    <button id="button2">호버2</button>
-
-    <div id="res"></div>
-
+    <!-- h1>lorem1^p>lorem -->
+    <h1>
+        Lorem.
+    </h1>
+    <p style="display: none;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non beatae fugiat eius debitis laboriosam, odit accusantium, eveniet animi repudiandae sint corporis ullam quasi quas ut! Quaerat laborum doloremque nemo veritatis!
+    </p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $("#button1").mouseenter(function () {
-            $("#res").text("1번버튼에 포인터 들어감");
-        });
-        $("#button1").mouseleave(function () {
-            $("#res").text("1번버튼 포인터 떠남");
-        });
-
-        $("#button2").hover(function () {
-            $("#res").text("2번버튼 포인터 들어감");
-        }, function () {
-            $("#res").text("2번버튼 포인터 떠남");
-        });
+        // h1요소에 마우스 포인터 들어가면
+        // p 요소가 보이게
+        // h1요소에서 마우스 포인터 떠나면
+        // p 요소가 숨겨지게
+        
     </script>
 </body>
-
 </html>
