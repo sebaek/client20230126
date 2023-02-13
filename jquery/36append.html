@@ -19,6 +19,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        $("#input1").keyup(function(e) {
+            if (e.key === "Enter") {
+                // #input1 요소에 enter 치면
+                // #input1의 value를 콘텐트로 가진 새 li 요소를
+                let content = $("#input1").val();
+                let liElem = $("<li></li>");
+                liElem.text(content);
+
+                // #list1 끝에 추가한다.
+                $("#list1").append(liElem);
+
+                // #input1의 value를 초기화한다.
+                $("#input1").val("");
+            }
+        });
     
     </script>
 </body>
